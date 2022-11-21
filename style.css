@@ -1,0 +1,105 @@
+html, body {	
+	background-color: white;
+	width: 90VW;
+	height: 90VH;	
+	font-family: 'Reenie Beanie', cursive;
+	overflow: hidden;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+h1{
+	font-size: 30VH;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all 3s;	
+	margin-bottom: 5VH;
+}
+
+.cars {
+	transition: all 3s;
+}
+
+h1:hover {
+	transform: rotate(20deg);
+}
+
+.cars:hover {
+	transform: rotate(20deg);
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+button {
+	font-family: 'Reenie Beanie', cursive;
+	text-transform: lowercase;
+	font-size: 3.5rem;
+	padding: 12px;
+	background-color: #FFFF00;	
+	border: 8px solid black;
+	border-radius: 15px;
+	width: 40%;
+}
+
+button:hover {
+	background-color: #FD32E7;
+}
+
+.cars img {
+	height: 80px;
+	animation: ride 8s linear infinite;
+
+}
+
+.cars {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	bottom: -90px;	
+}
+
+.cars img:nth-child(1) {
+	animation-delay: 2s;
+}
+
+.cars img:nth-child(2) {
+	animation-delay: 6s;
+}
+
+.cars img:nth-child(3) {
+	animation-delay: 3s;
+}
+
+.cars img:nth-child(4) {
+	animation-delay: 4.5s;
+}
+
+.cars img:nth-child(5) {
+	animation-delay: 1s;
+}
+
+.cars img:nth-child(6) {
+	animation-delay: 7s;
+}
+
+@keyframes ride {
+	0% {
+		transform: translateY(0);		
+	}
+
+		
+	100% {
+		transform: translateY(-200vh);		
+	}
+
